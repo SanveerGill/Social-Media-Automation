@@ -27,6 +27,8 @@ public class LoginPageTest extends TestBase {
 	@Test(priority=2)
 	public void loginTest() {
 		homePage = loginPage.login("test@test.com", "testing123");
+		String homeText = homePage.verifyHomeText(); 
+		Assert.assertEquals(homeText, "Sanveer's Social Media App");
 	}
 	
 	@Test(priority=1)
