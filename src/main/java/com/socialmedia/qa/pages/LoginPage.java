@@ -23,13 +23,13 @@ public class LoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String validateLoginPageTitle() {
+	public String getLoginPageTitle() {
 		return driver.getTitle();
 	}
 	
 	public HomePage login(String email, String password) {
-		emailField.sendKeys("test@test.com");
-		passwordField.sendKeys("testing123");
+		emailField.sendKeys(email);
+		passwordField.sendKeys(password);
 		loginButton.click();
 		
 		return new HomePage(); 
