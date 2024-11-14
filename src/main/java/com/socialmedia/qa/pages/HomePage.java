@@ -12,11 +12,22 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="//p[text()=\"Sanveer's Social Media App\"]")
 	private WebElement homeTextLink;
 	
+	@FindBy(xpath="//input[@placeholder='What's on your mind...']")
+	private WebElement postInputField; 
+		
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String verifyHomeText() {
+	public String getHomeText() {
 		return homeTextLink.getText(); 
+	}
+	
+	public boolean isHomeTextDisplayed() {
+		return homeTextLink.isDisplayed();
+	}
+	
+	public String getHomeTitle() {
+		return driver.getTitle();
 	}
 }

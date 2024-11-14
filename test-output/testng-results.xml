@@ -1,37 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T13:35:17 EST" name="Default suite" finished-at="2024-11-12T13:35:23 EST" duration-ms="5710">
+  <suite started-at="2024-11-13T22:19:15 EST" name="Functional Tests Suite" finished-at="2024-11-13T22:19:31 EST" duration-ms="16090">
     <groups>
     </groups>
-    <test started-at="2024-11-12T13:35:17 EST" name="Default test" finished-at="2024-11-12T13:35:23 EST" duration-ms="5710">
+    <test started-at="2024-11-13T22:19:15 EST" name="Login Tests" finished-at="2024-11-13T22:19:26 EST" duration-ms="10729">
       <class name="com.socialmedia.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@6a4f1a55]" started-at="2024-11-12T13:35:17 EST" name="setUp" finished-at="2024-11-12T13:35:20 EST" duration-ms="2477" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:15 EST" name="setUp" finished-at="2024-11-13T22:19:17 EST" duration-ms="2204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.socialmedia.qa.tests.LoginPageTest@6a4f1a55]" started-at="2024-11-12T13:35:20 EST" name="loginPageTitleTest" finished-at="2024-11-12T13:35:20 EST" duration-ms="7" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:17 EST" name="loginPageTitleTest" finished-at="2024-11-13T22:19:17 EST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@6a4f1a55]" started-at="2024-11-12T13:35:20 EST" name="tearDown" finished-at="2024-11-12T13:35:20 EST" duration-ms="612" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:17 EST" name="tearDown" finished-at="2024-11-13T22:19:18 EST" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@6a4f1a55]" started-at="2024-11-12T13:35:20 EST" name="setUp" finished-at="2024-11-12T13:35:22 EST" duration-ms="1667" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:18 EST" name="setUp" finished-at="2024-11-13T22:19:20 EST" duration-ms="1723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:2, instance:com.socialmedia.qa.tests.LoginPageTest@6a4f1a55]" started-at="2024-11-12T13:35:22 EST" name="loginTest" finished-at="2024-11-12T13:35:22 EST" duration-ms="331" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:2, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:20 EST" name="loginTest" data-provider="loginData" finished-at="2024-11-13T22:19:21 EST" duration-ms="1400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@6a4f1a55]" started-at="2024-11-12T13:35:22 EST" name="tearDown" finished-at="2024-11-12T13:35:23 EST" duration-ms="587" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:21 EST" name="tearDown" finished-at="2024-11-13T22:19:22 EST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:22 EST" name="setUp" finished-at="2024-11-13T22:19:24 EST" duration-ms="1686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:2, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:24 EST" name="loginTest" data-provider="loginData" finished-at="2024-11-13T22:19:25 EST" duration-ms="1476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bobsmith@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.socialmedia.qa.tests.LoginPageTest@5d908d47]" started-at="2024-11-13T22:19:25 EST" name="tearDown" finished-at="2024-11-13T22:19:26 EST" duration-ms="597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.socialmedia.qa.tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Tests -->
+    <test started-at="2024-11-13T22:19:26 EST" name="Home Page Tests" finished-at="2024-11-13T22:19:31 EST" duration-ms="5348">
+      <class name="com.socialmedia.qa.tests.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.socialmedia.qa.tests.HomePageTest@2ca923bb]" started-at="2024-11-13T22:19:26 EST" name="setup" finished-at="2024-11-13T22:19:28 EST" duration-ms="2054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.socialmedia.qa.tests.HomePageTest@2ca923bb]" started-at="2024-11-13T22:19:28 EST" name="verifyHomePageTitleTest" finished-at="2024-11-13T22:19:28 EST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.socialmedia.qa.tests.HomePageTest@2ca923bb]" started-at="2024-11-13T22:19:28 EST" name="tearDown" finished-at="2024-11-13T22:19:28 EST" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.socialmedia.qa.tests.HomePageTest@2ca923bb]" started-at="2024-11-13T22:19:28 EST" name="setup" finished-at="2024-11-13T22:19:30 EST" duration-ms="2055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyHomeTextTest()[pri:2, instance:com.socialmedia.qa.tests.HomePageTest@2ca923bb]" started-at="2024-11-13T22:19:30 EST" name="verifyHomeTextTest" finished-at="2024-11-13T22:19:30 EST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomeTextTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.socialmedia.qa.tests.HomePageTest@2ca923bb]" started-at="2024-11-13T22:19:30 EST" name="tearDown" finished-at="2024-11-13T22:19:31 EST" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.socialmedia.qa.tests.HomePageTest -->
+    </test> <!-- Home Page Tests -->
+  </suite> <!-- Functional Tests Suite -->
 </testng-results>
