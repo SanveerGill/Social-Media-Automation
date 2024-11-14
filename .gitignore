@@ -1,1 +1,30 @@
+# Java class files
+*.class
+
+# Log files
+*.log
+
+# IDE specific files
+.project
+.classpath
+.settings/
+.metadata/
+.idea/
+*.iml
+
+# Build directories
 /target/
+/bin/
+/out/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Reports and screenshots
+/reports/
+/screenshots/
+
+# Environment files
+.env
+
