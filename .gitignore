@@ -24,6 +24,7 @@ Thumbs.db
 # Reports and screenshots
 /reports/
 /screenshots/
+/test-output/
 
 # Environment files
 .env
