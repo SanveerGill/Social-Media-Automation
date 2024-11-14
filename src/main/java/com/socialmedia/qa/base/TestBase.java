@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class TestBase {
-	public static WebDriver driver;
+	private WebDriver driver;
 	public static Properties prop;
 	
 	public TestBase() {
@@ -32,7 +32,7 @@ public class TestBase {
 		}
 	}
 	
-	public static void initializeDriver() {
+	public WebDriver initializeDriver() {
 		String browser = prop.getProperty("browser");
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -48,6 +48,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get(prop.getProperty("url"));
+		return driver;
 		
 	}
 }

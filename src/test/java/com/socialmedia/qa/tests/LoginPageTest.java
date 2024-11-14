@@ -2,6 +2,7 @@ package com.socialmedia.qa.tests;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,17 +17,18 @@ import com.socialmedia.qa.util.TestUtil;
 
 public class LoginPageTest extends TestBase {
 	
+	WebDriver driver;
+	
+	TestBase base; 
+	
 	LoginPage loginPage;
 	HomePage homePage;
 	
-	public LoginPageTest() {
-		super();
-	}
-	
 	@BeforeMethod
 	public void setUp() {
-		initializeDriver(); 
-		loginPage = new LoginPage(); 
+		base = new TestBase(); 
+		driver = base.initializeDriver();
+		loginPage = new LoginPage(driver); 
 	}
 	
 	 @DataProvider(name = "loginData")

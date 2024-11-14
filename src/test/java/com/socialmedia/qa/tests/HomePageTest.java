@@ -1,5 +1,6 @@
 package com.socialmedia.qa.tests;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,17 +11,19 @@ import com.socialmedia.qa.pages.HomePage;
 import com.socialmedia.qa.pages.LoginPage;
 
 public class HomePageTest extends TestBase{
+	
+	WebDriver driver;
+	
+	TestBase base; 
+	
 	LoginPage loginPage; 
 	HomePage homePage;
 	
-	public HomePageTest(){
-		 super();
-	}
-	
 	@BeforeMethod
 	public void setup() {
-		initializeDriver();
-		loginPage = new LoginPage();
+		base = new TestBase(); 
+		driver = base.initializeDriver();
+		loginPage = new LoginPage(driver);
 		homePage = loginPage.login("test@test.com", "testing123"); 
 	}
 	
